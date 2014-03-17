@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace AsyncPowerShell
 {
-    public class AsyncPSCmdlet : PSCmdlet
+    public abstract class AsyncPSCmdlet : PSCmdlet
     {
         protected virtual Task ProcessRecordAsync()
         {
