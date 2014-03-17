@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Microsoft.Threading
 {
     /// <summary>Provides a pump that supports running asynchronous methods on the current thread.</summary>
-    public static class AsyncPump
+    internal static class AsyncPump
     {
         /// <summary>Runs the specified asynchronous function.</summary>
         /// <param name="func">The asynchronous function to execute.</param>
