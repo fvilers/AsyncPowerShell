@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AsyncPowerShell")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A simple commandlet that allows usage of async methods")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dev One")]
 [assembly: AssemblyProduct("AsyncPowerShell")]
