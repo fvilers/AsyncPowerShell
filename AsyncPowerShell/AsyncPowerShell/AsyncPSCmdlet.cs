@@ -1,4 +1,4 @@
-﻿using Microsoft.Threading;
+﻿using Nito.AsyncEx;
 using System.Management.Automation;
 using System.Threading.Tasks;
 
@@ -13,10 +13,7 @@ namespace AsyncPowerShell
 
         protected sealed override void ProcessRecord()
         {
-            AsyncPump.Run(async delegate
-            {
-                await ProcessRecordAsync();
-            });
+            AsyncContext.Run(async () => await ProcessRecordAsync());
         }
     }
 }
